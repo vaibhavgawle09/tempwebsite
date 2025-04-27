@@ -1,0 +1,568 @@
+/* Global font styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* dark gray for premium look */
+  }
+  
+  /* Special font for important titles */
+  h1, h2, h3, .logo, .detail-title {
+    font-family: 'Playfair Display', serif;
+  }
+  
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8e6e9; /* Pastel Pink Background */
+    color: #333;
+}
+
+.navbar a,
+button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+  
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d16d86;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #d16d86;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 50px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary {
+    background-color: #d16d86;
+    color: white;
+}
+
+.primary:hover {
+    background-color: #b0506b;
+}
+
+.secondary {
+    background-color: white;
+    border: 1px solid #d16d86;
+    color: #d16d86;
+}
+
+.secondary:hover {
+    background-color: #f8e6e9;
+}
+
+/* Hero Images */
+.hero-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero-images img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Explore Our Collections */
+.collections {
+    text-align: center;
+    padding: 80px 50px;
+    background-color: #fff;
+}
+
+.collections h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.collections p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+}
+
+.collection-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.collection-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.collection-item span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.collection-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Featured Products Section */
+.featured-products {
+    text-align: center;
+    padding: 80px 50px;
+    background-color: #f4f4fc;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.featured-products p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #d63384;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.old-price {
+    color: #999;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+.desc {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Handcrafted with Love Section */
+.handcrafted-love {
+    background-color: #ffe8e0;
+    text-align: center;
+    padding: 80px 50px;
+    border-radius: 20px;
+    margin: 60px 20px;
+}
+
+.handcrafted-love h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.handcrafted-love p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.love-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.love-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.love-card:hover {
+    transform: translateY(-5px);
+}
+
+.love-card .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #fff;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content .email-contact {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.about-content .email-contact a {
+    color: #d28cb1;
+    text-decoration: none;
+}
+
+.about-content .email-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #f7f0f5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #d28cb1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.categories {
+  padding: 4rem 2rem;
+  background-color: #fff0f5; /* soft pink background */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #b76e79;
+  margin-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.category-card {
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 200, 255, 0.2) 20%, transparent 70%);
+  animation: rotate 6s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.category-card * {
+  position: relative;
+  z-index: 1; /* content stays above the background effect */
+}
+
+
+.category-card img {
+    width: 200px; /* set a fixed width */
+    height: 200px; /* same height as width */
+    object-fit: cover;
+    border-radius: 50%; /* makes it a perfect circle */
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* optional: center the image */
+  }
+  
+
+.category-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #f9c6d0;
+  color: #333;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e9a7b2;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a.nav-icon {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  .navbar a.nav-icon:hover {
+    opacity: 0.7;
+  }
+
+  .count-badge {
+    position: absolute;
+    background-color: #ff4d6d;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.1em 0.4em;
+    border-radius: 50%;
+    top: -5px;
+    right: -8px;
+  }
+  
+  .navbar {
+    position: relative;
+  }
+  
+  .nav-icon {
+    position: relative;
+    display: inline-block;
+  }
+/* CART + WISHLIST PAGE STYLES */
+
+/* Container */
+.cart-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Each item card */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .cart-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Product Image */
+  .cart-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 1rem;
+  }
+  
+  /* Product Details */
+  .cart-details {
+    flex: 1;
+  }
+  
+  .cart-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .cart-details p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Remove Button */
+  .remove-btn {
+    padding: 8px 16px;
+    background-color: #ff6961;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #e55b54;
+  }
+  
+  /* Empty Cart / Wishlist Text */
+  #empty-cart, #empty-wishlist {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  /* Badge Styles (already done but just in case) */
+  .count-badge {
+    background-color: #ff6961;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-left: 4px;
+    position: relative;
+    top: -8px;
+    right: 4px;
+  }
+    

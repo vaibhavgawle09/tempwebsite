@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products | Fringe Accessories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="products.css" />
+  <link rel="stylesheet" href="responsive.css">
+
+  <script defer src="common.js"></script>
+
+  <script defer src="products.js"></script>
+  <style>
+    /* Quick fixes for nav icons */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .nav-icons a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #d28cb1; /* soft pink */
+    }
+    .nav-icons a:hover {
+      opacity: 0.7;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar {
+      display: flex;
+      gap: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Fringe</div>
+    <div class="nav-right">
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#" data-category="Necklaces">Necklaces</a>
+        <a href="#" data-category="Phone Charms">Phone Charms</a>
+        <a href="#" data-category="Earrings">Earrings</a>
+        <a href="#" data-category="Pearl Jewellery">Pearl Jewellery</a>
+        <a href="#" data-category="Bracelets">Bracelets</a>
+      </nav>
+      <a href="cart.html" class="nav-icon">🛒<span id="cart-count" class="count-badge">0</span></a>
+<a href="wishlist.html" class="nav-icon">🩷<span id="wishlist-count" class="count-badge">0</span></a>
+
+    </div>
+  </header>
+
+  <!-- Products Section -->
+  <section class="products-section">
+    <h1>Our Products</h1>
+
+    <!-- Category Filters -->
+    <div class="category-filters" id="category-filters">
+      <!-- JS will generate buttons -->
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-container" id="products-container">
+      <!-- JS will populate product cards -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Fringe. Made with love and beads. 💖</p>
+      <div class="social-links">
+        <a href="#" target="_blank">Instagram</a>
+        <a href="mailto:fringee.accessories@gmail.com" target="_blank">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Handle Navbar Category Links -->
+  <script>
+    const categoryLinks = document.querySelectorAll('[data-category]');
+    categoryLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const category = this.getAttribute('data-category');
+        const encodedCategory = encodeURIComponent(category);
+        window.location.href = `products.html?category=${encodedCategory}`;
+      });
+    });
+  </script>
+
+</body>
+</html>

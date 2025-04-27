@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart - Fringe Accessories</title>
+  <link rel="stylesheet" href="style.css"> <!-- Your main style file -->
+  <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+  
+  <!-- Navbar (copy same navbar you use everywhere) -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Fringe Accessories</a>
+    <div class="nav-links">
+      <a href="products.html">Shop</a>
+      <a href="cart.html" class="nav-icon">🛒<span id="cart-count" class="count-badge">0</span></a>
+      <a href="wishlist.html" class="nav-icon">🩷<span id="wishlist-count" class="count-badge">0</span></a>
+    </div>
+  </nav>
+
+  <main class="cart-container">
+    <h1>Your Cart 🛒</h1>
+    <div id="cart-items"></div>
+    <p id="empty-cart" style="text-align:center; margin-top:2em; display:none;">Your cart is empty! 🛒</p>
+  </main>
+
+  <script>
+    function updateBadges() {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      const wishlistItems = JSON.parse(localStorage.getItem('wishlistItems')) || [];
+      document.getElementById('cart-count').innerText = cartItems.length;
+      document.getElementById('wishlist-count').innerText = wishlistItems.length;
+    }
+
+    function renderCart() {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      const cartContainer = document.getElementById('cart-items');
+      const emptyMessage = document.getElementById('empty-cart');
+
+      if (cartItems.length === 0) {
+        emptyMessage.style.display = 'block';
+        return;
+      }
+
+      emptyMessage.style.display = 'none';
+      cartContainer.innerHTML = '';
+
+      cartItems.forEach((item, index) => {
+        const itemDiv = document.createElement('div');
+        itemDiv.classList.add('cart-item');
+        itemDiv.innerHTML = `
+          <img src="${item.image}" alt="${item.name}" class="cart-image">
+          <div class="cart-details">
+            <h3>${item.name}</h3>
+            <p>₹${item.price}</p>
+            <button class="remove-btn" onclick="removeFromCart(${index})">Remove</button>
+          </div>
+        `;
+        cartContainer.appendChild(itemDiv);
+      });
+    }
+
+    function removeFromCart(index) {
+      let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      cartItems.splice(index, 1);
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      renderCart();
+      updateBadges();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateBadges();
+      renderCart();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fringe - Handcrafted Accessories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Playfair+Display:wght@500;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <script defer src="common.js"></script>
+
+</head>
+  
+<body>
+
+   <!-- Header -->
+<header class="header">
+  <div class="logo">Fringe</div>
+  <nav class="navbar">
+    <a href="#" data-category="Necklaces">Necklaces</a>
+    <a href="#" data-category="Phone Charms">Phone Charms</a>
+    <a href="#" data-category="Earrings">Earrings</a>
+    <a href="#" data-category="Pearl Jewellery">Pearl Jewellery</a>
+    <a href="#" data-category="Bracelets">Bracelets</a>
+
+    <a href="cart.html" class="nav-icon">🛒<span id="cart-count" class="count-badge">0</span></a>
+<a href="wishlist.html" class="nav-icon">🩷<span id="wishlist-count" class="count-badge">0</span></a>
+
+    
+  </nav>
+  
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Handcrafted Beaded Accessories</h1>
+            <p>Unique, colorful, and versatile pieces to express your personal style</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn primary" data-category="Necklaces">Shop Necklaces</a>
+                <a href="#" class="btn secondary" data-category="Bracelets">Explore Bracelets</a>
+            </div>
+            
+        </div>
+        <div class="hero-images">
+            <img src="images/product1.jpg" alt="Product 1">
+            <img src="images/product2.jpg" alt="Product 2">
+            <img src="images/product3.jpg" alt="Product 3">
+        </div>
+        
+    </section>
+
+	<!-- Explore Our Collections Section -->
+<section class="collections">
+    <h2>Explore Our Collections</h2>
+    <p>Browse through our curated collections of handcrafted beaded accessories</p>
+    <div class="collections-grid">
+        <div class="collection-item">
+            <img src="images/collection1.jpg" alt="Necklaces">
+            <span>Necklaces / Sets</span>
+        </div>
+        <div class="collection-item">
+            <img src="images/collection2.jpg" alt="Phone Charms">
+            <span>Phone Charms and Keychains</span>
+        </div>
+        <div class="collection-item">
+            <img src="images/collection3.jpg" alt="Earrings">
+            <span>Earrings</span>
+        </div>
+        <div class="collection-item">
+            <img src="images/collection4.jpg" alt="Pearl Jewellery">
+            <span>Pearl Jewellery</span>
+        </div>
+        <div class="collection-item">
+            <img src="images/collection5.jpg" alt="Bracelets">
+            <span>Bracelets</span>
+        </div>
+        <div class="collection-item">
+            <img src="images/collection6.jpg" alt="Unisex Bracelets">
+            <span>Unisex Bracelets</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- Featured Products Section -->
+<section class="featured-products">
+    <h2>Featured Products</h2>
+    <p>Our most popular handcrafted pieces loved by customers</p>
+    <div class="products-grid">
+        <div class="product-item">
+            <img src="images/feature1.jpg" alt="Sea Beaded Necklace">
+            <div class="product-info">
+                <h3>Sea Beaded Necklace 🌊</h3>
+                <p class="price"><span class="old-price">₹220</span> ₹160</p>
+                <p class="desc">Dive into ocean-inspired elegance with our Sea Beaded Necklace.</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="images/feature2.jpg" alt="Coquette Bracelets">
+            <div class="product-info">
+                <h3>Coquette Bracelets</h3>
+                <p class="price"><span class="old-price">₹220</span> ₹180</p>
+                <p class="desc">Embrace the coquette aesthetic with these charming bracelets.</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="images/feature3.jpg" alt="Pearl Earrings">
+            <div class="product-info">
+                <h3>Pearl Earrings</h3>
+                <p class="price"><span class="old-price">₹199</span> ₹150</p>
+                <p class="desc">These delicate Pearl Earrings feature freshwater pearls.</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="images/feature4.jpg" alt="Mirrorball Phone Charm">
+            <div class="product-info">
+                <h3>Mirrorball Phone Charm</h3>
+                <p class="price"><span class="old-price">₹220</span> ₹199</p>
+                <p class="desc">Let your phone shine with our Mirrorball Phone Charm.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="categories">
+  <div class="container">
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="category-grid">
+
+      <div class="category-card">
+        <img src="images\necklaceshop.jpg" alt="Necklaces">
+        <h3>Necklaces</h3>
+        <a href="#" class="btn" data-category="Necklaces">Shop Now</a>
+      </div>
+
+      <div class="category-card">
+        <img src="images\earring1.jpg" alt="Earrings">
+        <h3>Earrings</h3>
+        <a href="#" class="btn" data-category="Earrings">Shop Now</a>
+      </div>
+
+      <div class="category-card">
+        <img src="images\braceletshop.jpg" alt="Bracelets">
+        <h3>Bracelets</h3>
+        <a href="#" class="btn" data-category="Bracelets">Shop Now</a>
+      </div>
+
+      <div class="category-card">
+        <img src="images\phonecharmshop.jpg" alt="Phone Charms">
+        <h3>Phone Charms</h3>
+        <a href="#" class="btn" data-category="Phone Charms">Shop Now</a>
+      </div>
+
+      <div class="category-card">
+        <img src="images\pearljewelshop.jpg" alt="Pearl Jewellery">
+        <h3>Keychains</h3>
+        <a href="#" class="btn" data-category="Phone Charms and Keychains">Shop Now</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Handcrafted with Love Section -->
+<section class="handcrafted-love">
+    <h2>Handcrafted with Love</h2>
+    <p>Each of our pieces is carefully handmade with attention to detail, ensuring you receive a unique accessory that stands out from mass-produced items.</p>
+    <div class="love-cards">
+        <div class="love-card">
+            <img src="images/quality-icon.png" alt="Quality Icon" class="icon">
+            <h3>Quality Materials</h3>
+            <p>We source the finest beads and components for our creations.</p>
+        </div>
+        <div class="love-card">
+            <img src="images/handcrafted-icon.png" alt="Handcrafted Icon" class="icon">
+            <h3>Handcrafted</h3>
+            <p>Each item is made by hand with care and attention to detail.</p>
+        </div>
+        <div class="love-card">
+            <img src="images/love-icon.png" alt="Love Icon" class="icon">
+            <h3>With Love</h3>
+            <p>We put our heart into every piece we create.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about-us">
+    <div class="about-content">
+        <h2>About Fringe</h2>
+        <p>Fringe began as a quiet rebellion — a stand against the fast, the forgettable, and the factory-made.</p>
+        <p>We believe accessories should feel deeply personal, not just look pretty.</p>
+        <p>Every piece is handcrafted from scratch — no outsourcing, no shortcuts, no mass production. Just beads, hours of mindful focus, and a profound love for detail.</p>
+        <p>Here, slow is intentional. Because thoughtful craftsmanship never goes out of style.</p>
+        <p>At Fringe, we don’t chase trends — we celebrate stories.</p>
+        <p>We're for those who notice the small, magical moments — the shimmer of a bead in the sunlight, the joy of a subtle splash of color that lifts your spirit.</p>
+        <p>This isn’t just a brand; it’s a heartfelt experiment in creating pieces that endure — not only in how they're made, but in how they make you feel.</p>
+        <p class="email-contact">📩 Connect with us: <a href="mailto:fringee.accessories@gmail.com">fringee.accessories@gmail.com</a></p>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Fringe. Made with love and beads. 💖</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/thefringee?igsh=ZXJxNmhxenI2Nm10" target="_blank">Instagram</a>
+            <a href="mailto:fringee.accessories@gmail.com" target="_blank">Email</a>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- your full page content (header, hero, etc) -->
+  
+    <footer>...</footer>
+  
+    <!-- Put your script HERE, at the bottom -->
+    <script>
+      // Select all nav links and Shop Now buttons that have data-category
+      const categoryLinks = document.querySelectorAll('[data-category]');
+    
+      categoryLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // prevent the normal link behavior
+          const category = this.getAttribute('data-category');
+          const encodedCategory = encodeURIComponent(category);
+          window.location.href = `products.html?category=${encodedCategory}`;
+        });
+      });
+    </script>
+
+  <script>
+    const categoryLinks = document.querySelectorAll('[data-category]');
+  
+    categoryLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault(); // Stop the link from doing default behavior
+        const category = this.getAttribute('data-category');
+        const encodedCategory = encodeURIComponent(category);
+        window.location.href = `products.html?category=${encodedCategory}`;
+      });
+    });
+  </script>
+  
+</body>
+</html>
+
+

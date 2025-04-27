@@ -1,0 +1,132 @@
+/* ============================
+   Universal Responsive Styles
+   For Fringe Accessories Website
+   ============================ */
+
+/* General Mobile Optimization */
+@media (max-width: 768px) {
+
+    /* Adjust padding and general layout */
+    body {
+      padding: 10px;
+    }
+  
+    .products-section {
+      padding: 40px 10px 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    /* Category Filter Buttons */
+    .category-filters {
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+  
+    .category-filters button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    /* Products Grid */
+    .products-container {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+  
+    /* Product Card */
+    .product-card {
+      padding: 15px;
+    }
+  
+    .product-image {
+      height: 200px;
+    }
+  
+    /* Navbar */
+    .header {
+      flex-direction: column;
+      padding: 10px 20px;
+      gap: 10px;
+    }
+  
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .navbar a {
+      font-size: 13px;
+    }
+  
+    /* Product Detail Page */
+    .product-detail-card {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .detail-image {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .detail-info {
+      gap: 0.8rem;
+    }
+  
+    /* Cart and Wishlist */
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-image {
+      margin-bottom: 10px;
+    }
+  
+    .remove-btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Footer */
+    .footer {
+      padding: 20px 10px;
+    }
+  
+    .social-links a {
+      font-size: 14px;
+    }
+  
+  }
+  
+  /* Even Smaller Devices (like phones) */
+  @media (max-width: 480px) {
+    
+    h1 {
+      font-size: 1.7rem;
+    }
+  
+    .category-filters button {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+    }
+  
+    .product-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .product-desc {
+      font-size: 0.9rem;
+    }
+  
+    .current-price {
+      font-size: 1rem;
+    }
+  
+  }
+  
